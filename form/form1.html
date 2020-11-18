@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- form : 웹서버에 정보를 제출하기 위한 용도-->
+    <form action="" method="" name="" novalidate autocapitalize="">
+        <!-- action : 전송한 정보를 처리할 웹페이지의 url
+             method : 서버를 전송할 http 방식(get(기본값), post)
+             name : 폼의 이름 지정
+             novaliodate : 데이터 유효성을 검사하지 않음
+             autocomplete : 자동완성(on(기본),off)
+        -->
+            <div>
+        <label for="username">이름</label>
+        <input type="text" id="username"/>
+    </div>
+    <div>
+        <label for="">비밀번호</label>
+        <input type="password" name="" id="password"/>
+    </div>
+    <div>
+        <label for="">성별</label> <!--radio 타입은 여러개 체크 못하게 함-->
+        <input type="radio" name="gender" id=""/> 남성
+        <input type="radio" name="gender" id=""/> 여성
+    </div>
+    <div>
+        <label for="">취미</label>
+        <input type="checkbox" name="hobby" id="" />영화감상
+        <input type="checkbox" name="hobby" id="" />독서
+        <input type="checkbox" name="hobby" id="" />운동
+        <input type="checkbox" name="hobby" id="" />감상
+
+    </div>
+        <input type="button" value="보내기"/>
+    </form>
+</body>
+</html>
