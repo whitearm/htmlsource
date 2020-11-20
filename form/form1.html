@@ -7,16 +7,22 @@
 </head>
 <body>
     <!-- form : 웹서버에 정보를 제출하기 위한 용도-->
-    <form action="" method="" name="" novalidate autocapitalize="">
+    <form action="" 
+    method="" 
+    name="" 
+    novalidate autocapitalize="">
         <!-- action : 전송한 정보를 처리할 웹페이지의 url
              method : 서버를 전송할 http 방식(get(기본값), post)
              name : 폼의 이름 지정
              novaliodate : 데이터 유효성을 검사하지 않음
              autocomplete : 자동완성(on(기본),off)
         -->
+        <div>
+            <input />
+        </div>
             <div>
         <label for="username">이름</label>
-        <input type="text" id="username"/>
+        <input type="text" id="username" name="username"/>
     </div>
     <div>
         <label for="">비밀번호</label>
@@ -35,7 +41,22 @@
         <input type="checkbox" name="hobby" id="" />감상
 
     </div>
+    <div>
+        <textarea name="" id="" cols="30" rows="10">
+           
+        </textarea>
+    </div>
+    <div>
+    <select name ="" id="">
+        <option value="bmw">bmw</option>
+        <option value="benz" selected>benz</option>
+        <option value="HYUNDAI">현대자동차</option>
+        <option value="kia">기아자동차</option>
+    </select>
+    </div>    
         <input type="button" value="보내기"/>
+        <input type="submit" value="submit"/>
+        <input type="reset" value="reset"/>
     </form>
 </body>
 </html>
